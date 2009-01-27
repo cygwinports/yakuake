@@ -1,0 +1,5 @@
+inherit kde3
+
+DESCRIPTION="KDE drop-down terminal emulator"
+HOMEPAGE="http://extragear.kde.org/apps/yakuake/"
+SRC_URI="http://download.berlios.de/yakuake/${P}.tar.bz2"
