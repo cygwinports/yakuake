@@ -1,5 +1,5 @@
 category: KDE Shells
-requires: cygwin kdelibs4 konsole libqt3
+requires: kdelibs4 konsole libqt3
 sdesc: "KDE drop-down terminal emulator"
 ldesc: "Yakuake is a drop-down terminal emulator based on KDE Konsole 
 technology."
