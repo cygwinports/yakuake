@@ -4,24 +4,24 @@ Yakuake is a drop-down terminal emulator based on KDE
 Konsole technology.
 
 Runtime requirements:
-  cygwin-1.5.25-15
-  kdelibs4-3.5.10-1
-  konsole-3.5.10-1
-  libqt3-3.3.8b-1
+  cygwin-1.7.1-1
+  konsole-4.3.5-1
+  libgcc1-4.3.4-3
+  libkdecore5-4.3.5-1
+  libQtCore4-4.5.3-2
+  libQtDBus4-4.5.3-2
+  libQtGui4-4.5.3-2
+  libstdc++6-4.3.4-3
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.63-1
-  automake1.10-1.10.1-2
-  binutils-20080624-2
-  cygport-0.4.3-1
-  gawk-3.1.6-1
-  gcc-core-3.4.4-3
-  gcc-g++-3.4.4-3
-  libtool-2.2.6a-1
-  make-3.81-1
-  perl-5.10.0-5
-  sed-4.1.5-2
+  automoc4-0.9.88-10
+  binutils-2.19.51-1
+  cmake-2.8.0-11
+  cygport-0.9.80-1
+  gcc4-core-4.3.4-3
+  gcc4-g++-4.3.4-3
+  make-3.81-2
 
 Canonical website:
   http://extragear.kde.org/apps/yakuake/
@@ -32,143 +32,22 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack yakuake-2.8.1-X-src.tar.bz2
+  unpack yakuake-2.9.6-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./yakuake-2.8.1-X.cygport all
+  cygport ./yakuake-2.9.6-X.cygport all
 
 This will create:
-  /usr/src/yakuake-2.8.1-X-src.tar.bz2
-  /usr/src/yakuake-2.8.1-X.tar.bz2
+  /usr/src/yakuake-2.9.6-X-src.tar.bz2
+  /usr/src/yakuake-2.9.6-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary package:
-
-  /etc/postinstall/yakuake.sh
-  /usr/bin/yakuake.exe
-  /usr/share/applications/kde/yakuake.desktop
-  /usr/share/apps/yakuake/default/icon.png
-  /usr/share/apps/yakuake/default/tabs.skin
-  /usr/share/apps/yakuake/default/tabs/back_image.png
-  /usr/share/apps/yakuake/default/tabs/left_corner.png
-  /usr/share/apps/yakuake/default/tabs/minus_down.png
-  /usr/share/apps/yakuake/default/tabs/minus_over.png
-  /usr/share/apps/yakuake/default/tabs/minus_up.png
-  /usr/share/apps/yakuake/default/tabs/plus.png
-  /usr/share/apps/yakuake/default/tabs/plus_down.png
-  /usr/share/apps/yakuake/default/tabs/plus_over.png
-  /usr/share/apps/yakuake/default/tabs/plus_up.png
-  /usr/share/apps/yakuake/default/tabs/right_corner.png
-  /usr/share/apps/yakuake/default/tabs/selected_back.png
-  /usr/share/apps/yakuake/default/tabs/selected_left.png
-  /usr/share/apps/yakuake/default/tabs/selected_right.png
-  /usr/share/apps/yakuake/default/tabs/separator.png
-  /usr/share/apps/yakuake/default/tabs/unselected_back.png
-  /usr/share/apps/yakuake/default/title.skin
-  /usr/share/apps/yakuake/default/title/back.png
-  /usr/share/apps/yakuake/default/title/config_down.png
-  /usr/share/apps/yakuake/default/title/config_over.png
-  /usr/share/apps/yakuake/default/title/config_up.png
-  /usr/share/apps/yakuake/default/title/focus_down.png
-  /usr/share/apps/yakuake/default/title/focus_over.png
-  /usr/share/apps/yakuake/default/title/focus_up.png
-  /usr/share/apps/yakuake/default/title/left.png
-  /usr/share/apps/yakuake/default/title/quit_down.png
-  /usr/share/apps/yakuake/default/title/quit_over.png
-  /usr/share/apps/yakuake/default/title/quit_up.png
-  /usr/share/apps/yakuake/default/title/right.png
-  /usr/share/apps/yakuake/plastik_dark/icon.png
-  /usr/share/apps/yakuake/plastik_dark/tabs.skin
-  /usr/share/apps/yakuake/plastik_dark/tabs/back_image.png
-  /usr/share/apps/yakuake/plastik_dark/tabs/left_corner.png
-  /usr/share/apps/yakuake/plastik_dark/tabs/minus_down.png
-  /usr/share/apps/yakuake/plastik_dark/tabs/minus_over.png
-  /usr/share/apps/yakuake/plastik_dark/tabs/minus_up.png
-  /usr/share/apps/yakuake/plastik_dark/tabs/plus_down.png
-  /usr/share/apps/yakuake/plastik_dark/tabs/plus_over.png
-  /usr/share/apps/yakuake/plastik_dark/tabs/plus_up.png
-  /usr/share/apps/yakuake/plastik_dark/tabs/right_corner.png
-  /usr/share/apps/yakuake/plastik_dark/tabs/selected_back.png
-  /usr/share/apps/yakuake/plastik_dark/tabs/selected_left.png
-  /usr/share/apps/yakuake/plastik_dark/tabs/selected_right.png
-  /usr/share/apps/yakuake/plastik_dark/tabs/separator.png
-  /usr/share/apps/yakuake/plastik_dark/tabs/unselected_back.png
-  /usr/share/apps/yakuake/plastik_dark/title.skin
-  /usr/share/apps/yakuake/plastik_dark/title/back.png
-  /usr/share/apps/yakuake/plastik_dark/title/config_down.png
-  /usr/share/apps/yakuake/plastik_dark/title/config_over.png
-  /usr/share/apps/yakuake/plastik_dark/title/config_up.png
-  /usr/share/apps/yakuake/plastik_dark/title/focus_down.png
-  /usr/share/apps/yakuake/plastik_dark/title/focus_over.png
-  /usr/share/apps/yakuake/plastik_dark/title/focus_up.png
-  /usr/share/apps/yakuake/plastik_dark/title/left.png
-  /usr/share/apps/yakuake/plastik_dark/title/quit_down.png
-  /usr/share/apps/yakuake/plastik_dark/title/quit_over.png
-  /usr/share/apps/yakuake/plastik_dark/title/quit_up.png
-  /usr/share/apps/yakuake/plastik_dark/title/right.png
-  /usr/share/apps/yakuake/plastik_light/icon.png
-  /usr/share/apps/yakuake/plastik_light/tabs.skin
-  /usr/share/apps/yakuake/plastik_light/tabs/back_image.png
-  /usr/share/apps/yakuake/plastik_light/tabs/left_corner.png
-  /usr/share/apps/yakuake/plastik_light/tabs/minus_down.png
-  /usr/share/apps/yakuake/plastik_light/tabs/minus_over.png
-  /usr/share/apps/yakuake/plastik_light/tabs/minus_up.png
-  /usr/share/apps/yakuake/plastik_light/tabs/plus_down.png
-  /usr/share/apps/yakuake/plastik_light/tabs/plus_over.png
-  /usr/share/apps/yakuake/plastik_light/tabs/plus_up.png
-  /usr/share/apps/yakuake/plastik_light/tabs/right_corner.png
-  /usr/share/apps/yakuake/plastik_light/tabs/selected_back.png
-  /usr/share/apps/yakuake/plastik_light/tabs/selected_left.png
-  /usr/share/apps/yakuake/plastik_light/tabs/selected_right.png
-  /usr/share/apps/yakuake/plastik_light/tabs/separator.png
-  /usr/share/apps/yakuake/plastik_light/tabs/unselected_back.png
-  /usr/share/apps/yakuake/plastik_light/title.skin
-  /usr/share/apps/yakuake/plastik_light/title/back.png
-  /usr/share/apps/yakuake/plastik_light/title/config_down.png
-  /usr/share/apps/yakuake/plastik_light/title/config_over.png
-  /usr/share/apps/yakuake/plastik_light/title/config_up.png
-  /usr/share/apps/yakuake/plastik_light/title/focus_down.png
-  /usr/share/apps/yakuake/plastik_light/title/focus_over.png
-  /usr/share/apps/yakuake/plastik_light/title/focus_up.png
-  /usr/share/apps/yakuake/plastik_light/title/left.png
-  /usr/share/apps/yakuake/plastik_light/title/quit_down.png
-  /usr/share/apps/yakuake/plastik_light/title/quit_over.png
-  /usr/share/apps/yakuake/plastik_light/title/quit_up.png
-  /usr/share/apps/yakuake/plastik_light/title/right.png
-  /usr/share/config.kcfg/yakuake.kcfg
-  /usr/share/doc/yakuake-2.8.1/AUTHORS
-  /usr/share/doc/yakuake-2.8.1/COPYING
-  /usr/share/doc/yakuake-2.8.1/COPYING-DOCS
-  /usr/share/doc/yakuake-2.8.1/ChangeLog
-  /usr/share/doc/yakuake-2.8.1/INSTALL
-  /usr/share/doc/yakuake-2.8.1/NEWS
-  /usr/share/doc/yakuake-2.8.1/README
-  /usr/share/doc/yakuake-2.8.1/TODO
-  /usr/share/icons/hicolor/16x16/apps/yakuake.png
-  /usr/share/icons/hicolor/32x32/apps/yakuake.png
-  /usr/share/locale/de/LC_MESSAGES/yakuake.mo
-  /usr/share/locale/el/LC_MESSAGES/yakuake.mo
-  /usr/share/locale/es/LC_MESSAGES/yakuake.mo
-  /usr/share/locale/et/LC_MESSAGES/yakuake.mo
-  /usr/share/locale/fr/LC_MESSAGES/yakuake.mo
-  /usr/share/locale/hu/LC_MESSAGES/yakuake.mo
-  /usr/share/locale/it/LC_MESSAGES/yakuake.mo
-  /usr/share/locale/ja/LC_MESSAGES/yakuake.mo
-  /usr/share/locale/nl/LC_MESSAGES/yakuake.mo
-  /usr/share/locale/pl/LC_MESSAGES/yakuake.mo
-  /usr/share/locale/pt/LC_MESSAGES/yakuake.mo
-  /usr/share/locale/pt_BR/LC_MESSAGES/yakuake.mo
-  /usr/share/locale/sv/LC_MESSAGES/yakuake.mo
-  /usr/share/locale/tr/LC_MESSAGES/yakuake.mo
-
-------------------
-
 Port Notes:
 
------ version 2.8.1-1 -----
-Initial release for Cygwin.
+----- version 2.9.6-1 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:
