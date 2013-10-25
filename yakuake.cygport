@@ -1,0 +1,12 @@
+inherit kde4
+
+NAME="yakuake"
+VERSION=2.9.9
+RELEASE=1
+CATEGORY="KDE Shells"
+SUMMARY="KDE drop-down terminal emulator"
+DESCRIPTION="Yakuake is a drop-down terminal emulator based on KDE Konsole
+technology."
+REQUIRES="konsole"
+HOMEPAGE="http://extragear.kde.org/apps/yakuake/"
+SRC_URI="mirror://kde/stable/yakuake/${VERSION}/src/${NAME}-${VERSION}.tar.xz"

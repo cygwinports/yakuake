@@ -1,5 +1,0 @@
-inherit kde4
-
-DESCRIPTION="KDE drop-down terminal emulator"
-HOMEPAGE="http://extragear.kde.org/apps/yakuake/"
-SRC_URI="mirror://berlios/yakuake/${P}.tar.bz2"

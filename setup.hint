@@ -1,5 +1,0 @@
-category: KDE Shells
-requires: konsole libgcc1 libkdecore5 libQtCore4 libQtDBus4 libQtGui4 libstdc++6
-sdesc: "KDE drop-down terminal emulator"
-ldesc: "Yakuake is a drop-down terminal emulator based on KDE Konsole 
-technology."
